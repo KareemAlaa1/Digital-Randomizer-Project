@@ -1,0 +1,109 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-16,176" rotation="0" hflip="1" vflip="1" label="HMI MCU" idLabPos="74,-42" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" eeprom="255,2,3,4,3,8,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0," Frequency="16 MHz" Program="D:/Digital_Randomizer_Project/bin/Digital_Randomizer_Project.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="Seven Segment" CircId="Seven Segment-41" mainComp="false" Show_id="false" Show_Val="false" Pos="224,172" rotation="0" hflip="1" vflip="1" label="Seven Segment-41" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" NumDisplays="1 _7seg" Color="Yellow" Vertical_Pins="false" CommonCathode="true" Threshold="2.4 V" MaxCurrent="0.02 A" Resistance="1 Ω" />
+
+<item itemtype="LedBar" CircId="LedBar-59" mainComp="false" Show_id="false" Show_Val="false" Pos="76,160" rotation="-90" hflip="1" vflip="1" label="LedBar-59" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Size="5 _Leds" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Subcircuit" CircId="Uno-60" mainComp="false" Show_id="true" Show_Val="false" Pos="-148,176" rotation="0" hflip="-1" vflip="1" label="Processing MCU&#xa;" idLabPos="127,-47" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="60_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="60_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="D:/Digital_Randomizer_Project/bin/Digital_Randomizer_Project.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="Servo" CircId="Servo-66" mainComp="false" Show_id="false" Show_Val="false" Pos="-52,344" rotation="90" hflip="1" vflip="1" label="Servo-66" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" Speed="0.2 _sec/60º" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" />
+
+<item itemtype="Push" CircId="Push-71" mainComp="false" Show_id="true" Show_Val="false" Pos="-104,144" rotation="0" hflip="1" vflip="1" label="generate" idLabPos="-20,-29" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="Push" CircId="Push-72" mainComp="false" Show_id="true" Show_Val="false" Pos="-104,92" rotation="0" hflip="1" vflip="1" label="next" idLabPos="-11,-33" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" />
+
+<item itemtype="AudioOut" CircId="AudioOut-126" mainComp="false" Show_id="false" Show_Val="false" Pos="-124,376" rotation="90" hflip="1" vflip="1" label="AudioOut-126" idLabPos="-20,-36" labelrot="0" valLabPos="-16,20" valLabRot="0" Buzzer="false" Impedance="8 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-172" mainComp="false" Show_id="true" Show_Val="false" Pos="-80,200" rotation="0" hflip="1" vflip="1" label="previous" idLabPos="-40,-30" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="LedBar" CircId="LedBar-178" mainComp="false" Show_id="false" Show_Val="false" Pos="-260,160" rotation="-90" hflip="-1" vflip="1" label="LedBar-178" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Size="3 _Leds" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Potentiometer" CircId="Potentiometer-362" mainComp="false" Show_id="false" Show_Val="false" Pos="-336,104" rotation="0" hflip="1" vflip="1" label="Potentiometer-362" idLabPos="-16,-40" labelrot="0" valLabPos="-34,-47" valLabRot="0" Resistance="1000 Ω" Value_Ohm="500 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-743" mainComp="false" Show_id="false" Show_Val="false" Pos="-276,92" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-743" idLabPos="-33,-28" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Node" CircId="Node-691" mainComp="false" Pos="172,256" />
+
+<item itemtype="Node" CircId="Node-741" mainComp="false" Pos="172,408" />
+
+<item itemtype="Node" CircId="Node-793" mainComp="false" Pos="-144,92" />
+
+<item itemtype="Node" CircId="Node-831" mainComp="false" Pos="-144,104" />
+
+<item itemtype="Connector" uid="connector-832" startpinid="Seven Segment-41-pin_commona" endpinid="Node-691-0" pointList="232,204,248,204,248,140,172,140,172,256" />
+
+<item itemtype="Connector" uid="connector-833" startpinid="Seven Segment-41-pin_f" endpinid="Uno-1-A5" pointList="200,188,196,188,196,212,256,212,256,132,148,132,148,192,136,192" />
+
+<item itemtype="Connector" uid="connector-834" startpinid="Seven Segment-41-pin_e" endpinid="Uno-1-A4" pointList="200,180,192,180,192,216,260,216,260,128,152,128,152,200,136,200" />
+
+<item itemtype="Connector" uid="connector-835" startpinid="Seven Segment-41-pin_d" endpinid="Uno-1-A3" pointList="200,172,188,172,188,220,264,220,264,124,156,124,156,208,136,208" />
+
+<item itemtype="Connector" uid="connector-836" startpinid="Seven Segment-41-pin_c" endpinid="Uno-1-A2" pointList="200,164,184,164,184,224,268,224,268,120,160,120,160,216,136,216" />
+
+<item itemtype="Connector" uid="connector-837" startpinid="Seven Segment-41-pin_b" endpinid="Uno-1-A1" pointList="200,156,180,156,180,228,272,228,272,116,164,116,164,224,136,224" />
+
+<item itemtype="Connector" uid="connector-838" startpinid="Seven Segment-41-pin_a" endpinid="Uno-1-A0" pointList="200,148,176,148,176,232,276,232,276,112,168,112,168,232,136,232" />
+
+<item itemtype="Connector" uid="connector-839" startpinid="AudioOut-126-lPin" endpinid="Uno-1-10" pointList="-116,360,-116,280,-8,280" />
+
+<item itemtype="Connector" uid="connector-840" startpinid="LedBar-59-led1-pinP" endpinid="Uno-1-12" pointList="60,176,60,296,-8,296" />
+
+<item itemtype="Connector" uid="connector-841" startpinid="LedBar-59-led0-pinP" endpinid="Uno-1-11" pointList="52,176,52,288,-8,288" />
+
+<item itemtype="Connector" uid="connector-842" startpinid="LedBar-59-led2-pinP" endpinid="Uno-1-4" pointList="68,176,68,304,4,304,4,224,-8,224" />
+
+<item itemtype="Connector" uid="connector-843" startpinid="LedBar-59-led3-pinP" endpinid="Uno-1-5" pointList="76,176,76,312,12,312,12,232,-8,232" />
+
+<item itemtype="Connector" uid="connector-844" startpinid="LedBar-59-led4-pinP" endpinid="Uno-1-7" pointList="84,176,84,320,20,320,20,248,-8,248" />
+
+<item itemtype="Connector" uid="connector-845" startpinid="Seven Segment-41-pin_g" endpinid="Uno-1-8" pointList="200,196,200,208,252,208,252,136,144,136,144,188,124,188,124,220,92,220,92,264,-8,264" />
+
+<item itemtype="Connector" uid="connector-846" startpinid="Node-691-2" endpinid="Uno-1-GND0" pointList="172,256,136,256" />
+
+<item itemtype="Connector" uid="connector-847" startpinid="Node-741-2" endpinid="Node-691-1" pointList="172,408,172,256" />
+
+<item itemtype="Connector" uid="connector-848" startpinid="Fixed Voltage-743-outnod" endpinid="Node-793-0" pointList="-260,92,-144,92" />
+
+<item itemtype="Connector" uid="connector-849" startpinid="Uno-1-0" endpinid="Uno-60-1" pointList="-8,192,-20,192,-20,108,280,108,280,420,-184,420,-184,200,-156,200" />
+
+<item itemtype="Connector" uid="connector-850" startpinid="Uno-1-1" endpinid="Uno-60-0" pointList="-8,200,-24,200,-24,104,284,104,284,424,-188,424,-188,192,-156,192" />
+
+<item itemtype="Connector" uid="connector-851" startpinid="Push-72-switch0pinN" endpinid="Uno-1-2" pointList="-88,92,-28,92,-28,208,-8,208" />
+
+<item itemtype="Connector" uid="connector-852" startpinid="Node-793-2" endpinid="Push-72-pinP0" pointList="-144,92,-120,92" />
+
+<item itemtype="Connector" uid="connector-853" startpinid="Push-71-switch0pinN" endpinid="Uno-1-3" pointList="-88,144,-32,144,-32,216,-8,216" />
+
+<item itemtype="Connector" uid="connector-854" startpinid="Fixed Voltage-172-outnod" endpinid="Uno-1-6" pointList="-64,200,-36,200,-36,240,-8,240" />
+
+<item itemtype="Connector" uid="connector-857" startpinid="Potentiometer-362-PinM" endpinid="Uno-60-A3" pointList="-336,120,-336,208,-300,208" />
+
+<item itemtype="Connector" uid="connector-858" startpinid="Potentiometer-362-PinA" endpinid="Uno-60-GND0" pointList="-352,104,-360,104,-360,256,-300,256" />
+
+<item itemtype="Connector" uid="connector-859" startpinid="Node-793-1" endpinid="Node-831-0" pointList="-144,92,-144,104" />
+
+<item itemtype="Connector" uid="connector-860" startpinid="Potentiometer-362-PinB" endpinid="Node-831-1" pointList="-320,104,-144,104" />
+
+<item itemtype="Connector" uid="connector-861" startpinid="Node-831-2" endpinid="Push-71-pinP0" pointList="-144,104,-144,144,-120,144" />
+
+<item itemtype="Connector" uid="connector-863" startpinid="AudioOut-126-rPin" endpinid="Node-741-1" pointList="-124,360,-124,280,-144,280,-144,416,172,416,172,408" />
+
+<item itemtype="Connector" uid="connector-864" startpinid="Servo-66-in0" endpinid="Uno-1-3V3" pointList="-36,296,-36,284,-96,284,-96,412,176,412,176,280,136,280" />
+
+<item itemtype="Connector" uid="connector-865" startpinid="Servo-66-in1" endpinid="Node-741-0" pointList="-52,296,-52,288,-92,288,-92,408,172,408" />
+
+<item itemtype="Connector" uid="connector-866" startpinid="Servo-66-in2" endpinid="Uno-1-9" pointList="-68,296,-88,296,-88,404,92,404,92,272,-8,272" />
+
+<item itemtype="Connector" uid="Connector-867" startpinid="LedBar-178-led0-pinP" endpinid="Uno-60-A2" pointList="-236,176,-236,192,-328,192,-328,216,-300,216" />
+
+<item itemtype="Connector" uid="Connector-868" startpinid="LedBar-178-led1-pinP" endpinid="Uno-60-A1" pointList="-244,176,-244,188,-320,188,-320,224,-300,224" />
+
+<item itemtype="Connector" uid="Connector-869" startpinid="LedBar-178-led2-pinP" endpinid="Uno-60-A0" pointList="-252,176,-252,184,-312,184,-312,232,-300,232" />
+
+</circuit>
